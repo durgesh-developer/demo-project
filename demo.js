@@ -9,6 +9,11 @@ function updateRemainingChars(event) {
   // console.log(enteredTextLength);
   let remainChar = maxAllowedChars - enteredTextLength;
   // console.log(remainChar);
+  if (remainChar <= 10) {
+    remainingChars.classList.add("warning");
+  } else {
+    remainingChars.classList.remove("warning");
+  }
   remainingChars.textContent = remainChar;
 }
 
