@@ -11,8 +11,10 @@ function updateRemainingChars(event) {
   // console.log(remainChar);
   if (remainChar <= 10) {
     remainingChars.classList.add("warning");
+    productNameInput.classList.add("warning");
   } else {
     remainingChars.classList.remove("warning");
+    productNameInput.classList.remove("warning");
   }
   remainingChars.textContent = remainChar;
 }
